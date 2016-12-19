@@ -1,0 +1,190 @@
+body{
+    font-family: 'Droid Sans', sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h4{
+    display:inline;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Droid Serif', serif;
+    font-size: 2em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*Page Headers*/
+
+#title{
+    font-family: 'Droid Serif', serif;
+    text-align: center;
+    font-size: 5em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/*Tabs*/
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+.buttons{
+    font-family: 'Droid Serif', serif;
+    text-align: center;
+}
+
+.button {
+    background:none;
+    border:none;
+    margin:2em;
+    padding-left:2em;
+    padding-right:2em;
+    font-family: 'Droid Serif', serif;
+    font-size: 1.5vw;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\226B';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 1em;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*Home*/
+
+.descriptor {
+    margin-top:0;
+    font-family: 'Droid Serif', serif;
+    text-align: center;
+}
+
+/*About page*/
+
+#icons {
+    text-align: center;
+    margin-bottom:6em;
+}
+
+#student {
+    margin-bottom: 6em;
+}
+
+#writer {
+    margin-bottom: 6em;
+}
+
+#bookworm {
+    margin-bottom: 6em;
+}
+
+#music {
+    margin-bottom: 6em;
+}
+
+.about {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.1em;
+    margin-bottom: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.backtotop {
+    align-content: center;
+    background:none;
+    border:none;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 1em;
+}
+
+.backtotop span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.backtotop span:after {
+    content: '\226A';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+
+.backtotop:hover span {
+    padding-left: 1em;
+}
+
+.backtotop:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+
+
+/*Projects page*/
+.myprojects {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/*Contact page*/
+
+#contact {
+    font-family: 'Droid Serif', serif;
+    text-align: center;
+    font-style: italic;
+}
+
+#mail {
+    width:5%;
+    height:5%;
+    padding-right:1%;
+}
+
+#linkedin {
+    width:5%;
+    height:4%;
+    padding-right: 1%;
+}
