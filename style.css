@@ -88,20 +88,8 @@ a:link, a:visited {
 
 /*About page*/
 
-#icons {
-    text-align: center;
-    margin-bottom:6em;
-}
-
 #student {
-    margin-bottom: 6em;
-}
-
-#writer {
-    margin-bottom: 6em;
-}
-
-#bookworm {
+    margin-top: 9em;
     margin-bottom: 6em;
 }
 
