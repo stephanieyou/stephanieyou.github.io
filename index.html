@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Home | Stephanie You</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Droid+Sans" rel="stylesheet">
-</head>
+---
+layout: base
+---
+<div class="wrapper">
+    <header>
+        {% if site.compass.logo %}
+        <div class="logo-container">
+          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+        </div>
+        {% endif %}
 
-<body>
-    <div class="buttons">
-        <button type="button" class="button"><strong>home</strong></button>
-        <a href="about.html" type="button" class="button"><span>about</span></a>
-        <a href="projects.html" type="button" class="button"><span>projects</span></a>
-        <a href="contact.html" type="button" class="button"><span>contact</span></a>
-    </div>
-    
-    <div>
-        <h1 id="title">Stephanie You</h1>
-    </div>
-    
-    <div class="descriptor">
-        <em>Carnegie Mellon University '20 || Computer Science</em>
-    </div>
-</body>
-</html>
+        {% if site.compass.author %}
+        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+        {% endif %}
+
+        {% if site.compass.tagline %}
+        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
+        {% endif %}
+    </header>
+    <main>
+      {% if site.compass.include_content %}
+      <div class="content">
+        {% include content.html %}
+      </div>
+      {% endif %}
+    </main>
+</div>
